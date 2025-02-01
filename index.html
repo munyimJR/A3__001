@@ -13,7 +13,6 @@
 <body>
     <!-- Nav -->
     <nav class="navbar bg-base-100 px-6 md:px-16 flex justify-between items-center relative">
-        <!-- Logo (Left Side) -->
         <div class="flex-shrink-0">
             <a class="flex items-center gap-2 text-xl font-semibold">
                 <img src="c1-assets/logo-header.png" alt="img" class="h-10">
@@ -21,7 +20,6 @@
             </a>
         </div>
 
-        <!-- Center Menu (ALWAYS CENTERED) -->
         <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
             <ul class="menu menu-horizontal px-1">
                 <li><a>Find a pet</a></li>
@@ -30,7 +28,6 @@
             </ul>
         </div>
 
-        <!-- Mobile Dropdown (Right Side) -->
         <div class="block md:hidden ml-auto relative">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost">
@@ -49,7 +46,6 @@
             </div>
         </div>
 
-        <!-- Right-side Buttons -->
         <div class="hidden md:flex navbar-end items-center gap-2 flex-shrink-0">
             <button class="btn btn-ghost btn-circle h-9 py-1">
                 <div class="indicator">
@@ -73,43 +69,26 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- <section class="bg-white flex justify-center items-center min-h-screen p-6"> -->
-    <!-- <section class="px-4 bg-white max-h-min mt-3 relative flex flex-col text">
-            <div class="text-left relative z-10 max-w-lg">
-                <h1 class="text-3xl font-bold text-black">
-                    Pamper Your Pet,<br> Because They Deserve the Best
+
+    <!-- Find a Pet -->
+    <section class="flex items-center justify-center px-6 md:px-12">
+        <div class="relative w-full max-w-7xl min-h-[300px] md:min-h-[400px]">
+            <img src="c1-assets/cat-big.png" alt="Cute Cat" class="absolute inset-0 w-full h-full object-contain" />
+
+            <div class="absolute inset-0 flex flex-col justify-center p-6 md:p-12 max-w-lg">
+                <h1 class="text-2xl md:text-4xl font-bold text-black">
+                    Pamper Your Pet,<br>Because They Deserve the Best
                 </h1>
-                <p class="text-gray-600 mt-3">
-                    Discover a world of treats, toys, and essentials handpicked for your furry friends.
-                    Shop now and make tails wag with joy!
+                <p class="text-gray-700 mt-4">
+                    Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and
+                    make tails wag with joy!
                 </p>
                 <div class="flex justify-start mt-4">
                     <button class="btn btn-warning">Find a pet</button>
                 </div>
-            
-     
-                <img src="c1-assets/cat-big.png" alt="CAT" class="-mt">
-         
-        </section>
-         -->
-    <!-- <body class="flex items-center justify-center min-h-screen bg-gray-100"> -->
-    <section class=" justify-center min-h-screen relative">
-        <!-- Background Image -->
-        <img src="c1-assets/cat-big.png" alt="Cute Cat" class="absolute w-full h-full object-cover" />
-
-        <!-- Text Content -->
-        <div class="absolute inset-0 flex flex-col justify-center p-6 ">
-            <h1 class="text-3xl md:text-4xl font-bold text-black">Pamper Your Pet,<br>Because They Deserve the Best</h1>
-            <p class="text-gray-700 mt-4">Discover a world of treats, toys, and essentials handpicked for your furry
-                friends. Shop now and make tails wag with joy!</p>
-            <div class="flex justify-start mt-4">
-                <button class="btn btn-warning">Find a pet</button>
             </div>
         </div>
     </section>
-
-
 
     <!-- Categories -->
     <section class="px-4 md:px-8 py-12 bg-base-100">
@@ -180,17 +159,16 @@
         <div class="flex flex-col lg:flex-row gap-6">
             <!-- Big Pet Product -->
             <div class="card bg-[#FFE9A0] lg:w-1/4">
-                <div class="card-body relative z-10">
-                    <div class="flex-1">
-                        <h3 class="card-title text-2xl">T- Shirt For Dogs</h3>
+                <div class="card-body relative">
+                    <div>
+                        <h3 class="text-2xl">T- Shirt For Dogs</h3>
                         <p class="text-gray-600">Discover a world of treats, toys, and essentials handpicked for</p>
                         <button class="btn bg-white hover:bg-gray-100 text-black w-32 mt-2">Shop Now</button>
                     </div>
-                    <div class="-mt-12">
+                    <div class="-mt-12 absolute top-12 left-52">
                         <img src="c1-assets/cute-pet-mid.png" alt="Dog wearing t-shirt"
                             class="w-full h-48 object-contain mt-4" />
                     </div>
-
                 </div>
             </div>
 
@@ -351,7 +329,38 @@
             </div>
         </div>
     </section>
+
+    <!-- Everyday Low Price -->
+    <section class="px-4 md:px-8 py-12 bg-base-100">
+        <h2 class="text-3xl font-bold mb-8">Everyday low Price</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card overflow-hidden" style="background: linear-gradient(to right, #e9d5ff, #93c5fd)">
+                <div class="card-body relative">
+                    <div class="max-w-[50%]">
+                        <div class="text-sm mb-2">Under Price</div>
+                        <h3 class="text-2xl font-bold mb-1">Pet Grooming Mitt</h3>
+                        <p class="text-sm mb-4">(Easy Hair Removal)</p>
+                        <div class="text-4xl font-bold">$7.99</div>
+                    </div>
+                    <img src="c1-assets/cute-dog-mid.png"
+                        alt="" class="absolute right-0 bottom-0 w-1/2 " />
+                </div>
+            </div>
+
+            <div class="card bg-yellow-100">
+                <div class="card-body flex flex-row items-center justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">T-Shirt for Dogs</h3>
+                        <div class="text-4xl font-bold text-yellow-500">$7.99</div>
+                    </div>
+                    <img src="c1-assets/cute-pet-mid.png"
+                        alt="" class="w-1/2 h-auto object-contain" />
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 <!-- News -->
 <section class="relative z-10 px-4 md:px-8 py-6">
     <div class="max-w-6xl mx-auto bg-[#FDF7F3] rounded-xl p-8 md:p-12">
@@ -383,7 +392,7 @@
             <div>
                 <a class="flex items-center gap-2 text-xl font-semibold mb-4">
                     <img src="c1-assets/logo-footer.png" alt="">
-                    Browse Pets
+                    <span>Browse<span class="text-yellow-400">4</span>Pets</span>
                 </a>
                 <p class="text-gray-600 max-w-xs mb-2">
                     Discover a world of treats, toys, and essentials handpicked for your furry friends
@@ -434,9 +443,5 @@
         </div>
     </div>
 </footer>
-
-
-
-
 
 </html>
