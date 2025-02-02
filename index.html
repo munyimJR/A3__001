@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse Pets</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p, .btn,span{
+            font-family: sora;
+        }
+    </style>
 </head>
-
-<body>
+<!-- 1111 -->
+<body class="adlam-display-regular">
     <!-- Nav -->
     <nav class="navbar bg-base-100 px-6 md:px-16 flex justify-between items-center relative">
         <div class="flex-shrink-0">
@@ -408,35 +418,34 @@
             </div>
         </div>
     </section>
-</body>
 
 <!-- News -->
-<section class="relative z-10 px-4 py-3">
+<section class="relative z-10 p-4">
+    <div class="card max-w-6xl mx-auto bg-[#FDF7F3] rounded-xl shadow-xl overflow-hidden">
+        <div class="card-body p-8 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-1 md:order-2 flex justify-center">
+                    <img src="/c1-assets/cute-pet-mid.png" alt="Dog wearing blue patterned shirt"
+                        class="w-full max-w-[250px] h-auto" />
+                </div>
 
-    <div class="max-w-6xl mx-auto bg-[#FDF7F3] rounded-xl p-8 md:p-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="order-1 md:order-2">
-                <img src="c1-assets/cute-pet-mid.png" alt="Dog wearing blue patterned shirt"
-                    class="w-full max-w-[250px] mx-auto h-auto" />
-            </div>
-
-            <div class="order-2 md:order-1">
-                <h2 class="text-3xl font-bold mb-2">Get Pawsome News!</h2>
-                <p class="text-gray-600 mb-6">Exclusive training tips, tricks, product deals and more.</p>
-                <div class="flex gap-2 max-w-md">
-                    <input type="email" placeholder="Enter email..." class="input input-bordered flex-1" />
-                    <button class="btn bg-yellow-400 hover:bg-yellow-500 border-none">
-                        Subscribe
-                    </button>
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-2">Get Pawsome News!</h2>
+                    <p class="text-gray-600 mb-6">Exclusive training tips, tricks, product deals and more.</p>
+                    <form class="flex flex-col items-start sm:flex-row gap-2 max-w-md">
+                        <input type="email" placeholder="Enter email..." class="input input-bordered" />
+                        <button type="submit" class="btn bg-yellow-400 hover:bg-yellow-500 border-none text-black">
+                            Subscribe
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 
 <!-- Footer -->
-<footer class="-mt-56 min-h-[400px] bg-yellow-100 pt-56 pb-14 w-full">
+<footer class="sora -mt-56 min-h-[400px] bg-yellow-100 pt-56 pb-14 w-full">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="grid md:grid-cols-3 gap-8">
             <div>
@@ -493,5 +502,6 @@
         </div>
     </div>
 </footer>
+</body>
 
 </html>
