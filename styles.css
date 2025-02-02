@@ -9,3 +9,26 @@
     font-weight: <weight>;
     font-style: normal;
   }
+   @keyframes moving-light {
+    0% {
+      transform: translateX(0) translateY(0);
+      box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+    }
+    25% {
+      transform: translateX(100%) translateY(0);
+      box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+    }
+  
+  }
+  
+  .moving-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    animation: moving-light 6s infinite linear;
+    pointer-events: none;
+    z-index: 1;
+  }
